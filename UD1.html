@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordemos cómo se programa</title>
+    <!-- Enlace a Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente Inter para una mejor legibilidad -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Color de fondo gris suave */
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-title {
+            border-left: 8px solid #f97316; /* Borde naranja para títulos de sección */
+            padding-left: 1rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header de la Unidad -->
+    <header class="bg-gradient-to-r from-orange-500 to-red-600 text-white p-6 md:p-12 text-center rounded-b-xl">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2">Recordemos cómo se programa</h1>
+            <p class="text-xl font-light opacity-90">Unidad 1 - 3º ESO: Del lenguaje de bloques a la programación con código.</p>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="sticky top-0 z-50 bg-gray-800 text-white shadow-lg">
+        <div class="container mx-auto p-4">
+            <ul class="flex justify-around items-center space-x-4 overflow-x-auto">
+                <li><a href="#introduccion" class="nav-link transition-transform duration-200 block text-center text-sm md:text-base p-2 rounded-md hover:bg-orange-500">Introducción</a></li>
+                <li><a href="#lenguajes" class="nav-link transition-transform duration-200 block text-center text-sm md:text-base p-2 rounded-md hover:bg-orange-500">Lenguajes</a></li>
+                <li><a href="#elementos" class="nav-link transition-transform duration-200 block text-center text-sm md:text-base p-2 rounded-md hover:bg-orange-500">Elementos</a></li>
+                <li><a href="#algoritmos-logica" class="nav-link transition-transform duration-200 block text-center text-sm md:text-base p-2 rounded-md hover:bg-orange-500">Algoritmos y Lógica</a></li>
+                <li><a href="#interaccion" class="nav-link transition-transform duration-200 block text-center text-sm md:text-base p-2 rounded-md hover:bg-orange-500">Interacción</a></li>
+                <li><a href="#actividades-evaluacion" class="nav-link transition-transform duration-200 block text-center text-sm md:text-base p-2 rounded-md hover:bg-orange-500">Actividades</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-8 space-y-10">
+
+        <!-- Sección de Introducción -->
+        <section id="introduccion" class="card p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 section-title">Introducción: El Salto a un Nivel Superior</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                ¡Bienvenidos a 3º de la ESO! Ya sois unos expertos en la programación con bloques. Ahora, es momento de dar el siguiente paso y aprender a programar con un lenguaje de código real, como <span class="font-bold">Python</span>. Veréis que muchos conceptos son los mismos, solo cambia la forma en que los escribimos.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Esta unidad es un puente entre lo que ya sabéis y lo que estáis a punto de descubrir.
+            </p>
+        </section>
+
+        <!-- CYR.3.A.1. Lenguajes de programación: tipos y paradigmas. -->
+        <section id="lenguajes" class="card p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 section-title">1. Lenguajes de Programación: Tipos y Paradigmas</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Existen miles de lenguajes de programación. Se pueden clasificar de varias formas. La que más nos interesa es la diferencia entre:
+            </p>
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-blue-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800">Visuales (Bloques)</h3>
+                    <p class="text-md leading-relaxed text-blue-700 mb-2">
+                        Como Scratch, son ideales para principiantes. Se basan en arrastrar y soltar bloques que representan instrucciones.
+                    </p>
+                    <p class="text-md leading-relaxed font-bold text-blue-700">Ventajas:</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-blue-700">
+                        <li>Intuitivos y visuales.</li>
+                        <li>Evitan errores de sintaxis.</li>
+                        <li>Aprendizaje rápido.</li>
+                    </ul>
+                </div>
+                <div class="bg-green-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2 text-green-800">Textuales (Código)</h3>
+                    <p class="text-md leading-relaxed text-green-700 mb-2">
+                        Como Python, son los lenguajes profesionales. Las instrucciones se escriben con texto.
+                    </p>
+                    <p class="text-md leading-relaxed font-bold text-green-700">Ventajas:</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-green-700">
+                        <li>Más flexibles y potentes.</li>
+                        <li>Se usan para crear aplicaciones complejas.</li>
+                        <li>Mayor control sobre el programa.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CYR.3.A.2. Elementos de los programas. -->
+        <section id="elementos" class="card p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 section-title">2. Elementos Fundamentales de la Programación</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Los elementos básicos de un programa son los mismos en Scratch y en Python. La diferencia es cómo se escriben.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 mt-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Variables: Datos en Contenedores</h3>
+                    <p class="text-md leading-relaxed mb-2">
+                        Una variable es un espacio de memoria para guardar datos (números, texto, etc.).
+                    </p>
+                    <div class="bg-gray-100 p-4 rounded-lg my-2 text-sm">
+                        <p class="font-bold mb-1 text-gray-800">En Scratch:</p>
+                        <p class="font-mono text-gray-700">`crear variable [puntos]`</p>
+                        <p class="font-bold mt-2 mb-1 text-gray-800">En Python:</p>
+                        <p class="font-mono text-gray-700">`puntos = 0`</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Estructuras de Control</h3>
+                    <p class="text-md leading-relaxed mb-2">
+                        Son las instrucciones que controlan el flujo del programa. Las principales son las condicionales y los bucles.
+                    </p>
+                    <div class="bg-gray-100 p-4 rounded-lg my-2 text-sm">
+                        <p class="font-bold mb-1 text-gray-800">En Scratch:</p>
+                        <p class="font-mono text-gray-700">`si <tocado por el ratón?> entonces { ... }`</p>
+                        <p class="font-bold mt-2 mb-1 text-gray-800">En Python (condicional):</p>
+                        <p class="font-mono text-gray-700">`if tocado_raton:`<br>`    # ... código ...`</p>
+                        <p class="font-bold mt-2 mb-1 text-gray-800">En Python (bucle):</p>
+                        <p class="font-mono text-gray-700">`while True:`<br>`    # ... código ...`</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CYR.3.A.3. Secuencia de instrucciones. CYR.3.A.4. Tareas repetitivas y condicionales. -->
+        <section id="algoritmos-logica" class="card p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 section-title">3. Algoritmos y Lógica con Código</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                La lógica de un programa sigue siendo la misma. La única diferencia es que ahora la escribimos.
+            </p>
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold mb-2">Algoritmos</h3>
+                <p class="text-md leading-relaxed">
+                    Un algoritmo es una secuencia de instrucciones para resolver un problema. En Python, la secuencia es la clave: las instrucciones se ejecutan de arriba a abajo.
+                </p>
+                <div class="bg-gray-100 p-4 rounded-lg my-2 text-sm">
+                    <p class="font-bold mb-1 text-gray-800">Ejemplo de secuencia en Python:</p>
+                    <p class="font-mono text-gray-700">`print("Hola")`<br>`print("Adiós")`</p>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Bucles `for` y `while`</h3>
+                <p class="text-md leading-relaxed">
+                    Python nos da más control sobre los bucles. El bucle `for` es ideal para repetir un número exacto de veces, y el bucle `while` para repetir mientras una condición sea verdadera.
+                </p>
+                <div class="bg-gray-100 p-4 rounded-lg my-2 text-sm">
+                    <p class="font-bold mb-1 text-gray-800">Bucle `for`:</p>
+                    <p class="font-mono text-gray-700">`for i in range(5):`<br>`    print("Hola " + str(i))`</p>
+                    <p class="font-bold mt-2 mb-1 text-gray-800">Bucle `while`:</p>
+                    <p class="font-mono text-gray-700">`contador = 0`<br>`while contador < 5:`<br>`    print("Hola")`<br>`    contador = contador + 1`</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CYR.3.A.5. Pantallas de interacción con el usuario. -->
+        <section id="interaccion" class="card p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 section-title">4. Interacción en el Texto</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                La interacción en Python se hace con la consola. Podemos pedir datos al usuario (<span class="font-bold">input</span>) y mostrarle información (<span class="font-bold">output</span>).
+            </p>
+            <p class="text-md leading-relaxed">
+                <span class="font-bold">Actividad Práctica:</span> Crea un programa en Python que pida al usuario su nombre y luego le dé la bienvenida.
+            </p>
+            <div class="bg-gray-100 p-4 rounded-lg my-2 text-sm">
+                <p class="font-mono text-gray-700">
+                    `nombre = input("¿Cuál es tu nombre? ")`<br>
+                    `print("Hola, " + nombre)`
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección de Actividades y Evaluación -->
+        <section id="actividades-evaluacion" class="card p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 section-title">Actividades de Evaluación</h2>
+            <p class="text-lg mb-6">
+                Estas actividades te permitirán demostrar tu habilidad en la programación, tanto con bloques como con código.
+            </p>
+
+            <!-- Criterios de Evaluación -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold mb-2">Criterios de Evaluación</h3>
+                <ul class="list-disc list-inside text-md text-gray-700 space-y-1">
+                    <li><span class="font-bold">1.3.</span> Entender cómo funciona un programa informático, la manera de elaborarlo y sus principales componentes.</li>
+                    <li><span class="font-bold">2.1.</span> Conocer y resolver la variedad de problemas posibles, desarrollando un programa informático y generalizando las soluciones, tanto de forma individual como trabajando en equipo, colaborando y comunicándose de forma adecuada.</li>
+                </ul>
+            </div>
+
+            <!-- Proyecto Final -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Proyecto Final: El Conversor Interactivo</h3>
+                <p class="text-md leading-relaxed mb-4">
+                    Tu misión es crear dos programas, uno en Scratch y otro en Python, que hagan lo mismo: convertir una temperatura de Celsius a Fahrenheit.
+                </p>
+                <p class="text-md font-bold mb-2">Requisitos Mínimos:</p>
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li><span class="font-bold">Programa en Scratch:</span><br>
+                        - Pide al usuario la temperatura en Celsius.<br>
+                        - Usa una variable para guardar el resultado.<br>
+                        - Muestra la temperatura convertida en la pantalla.</li>
+                    <li><span class="font-bold">Programa en Python:</span><br>
+                        - Pide al usuario la temperatura en Celsius (usando `input()`).<br>
+                        - Realiza el cálculo matemático `(temperatura * 9/5) + 32`.<br>
+                        - Muestra la temperatura convertida (usando `print()`).</li>
+                </ul>
+                <div class="bg-blue-100 p-4 rounded-lg mt-4 text-sm text-blue-800">
+                    <p class="font-semibold">Evaluación:</p>
+                    <p>Este proyecto se evaluará en base a la funcionalidad de ambos programas, la correcta aplicación de los conceptos (variables, operaciones matemáticas, entrada/salida) y la comparación de cómo se resuelven los mismos problemas con dos lenguajes de programación diferentes.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 text-center rounded-t-xl mt-12">
+        <p>&copy; 2025 Computación y Robótica - 3º ESO. Todos los derechos reservados.</p>
+        <p class="text-sm mt-2">Material de apoyo para el curso.</p>
+    </footer>
+
+</body>
+</html>
+
